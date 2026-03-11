@@ -3,16 +3,16 @@ import { Canvas } from '@react-three/fiber'
 import GrignaniShader from './GrignaniShader'
 
 const DEFAULTS = {
-  scale: 10.0,
-  distortStrength: 1.2,
-  pinchX: 0.25,
-  pinchY: -0.25,
-  waveAmp: 0.18,
-  waveFreq: 4.0,
-  bulgePower: 1.6,
-  twist: 0.15,
-  foldAngle: -0.7,
-  perspTilt: 1.3,
+  scale: 20.0,
+  distortStrength: 1.0,
+  pinchX: 0.0,
+  pinchY: 0.0,
+  waveAmp: 0.0,
+  waveFreq: 0.0,
+  bulgePower: 1.0,
+  twist: 0.0,
+  foldAngle: 0.0,
+  perspTilt: 1.0,
 }
 
 const SLIDERS = [
@@ -64,7 +64,7 @@ function Controls({ params, setParams }) {
         display: 'flex', justifyContent: 'space-between',
         alignItems: 'center', marginBottom: 10,
       }}>
-        <span style={{ fontWeight: 'bold', fontSize: 13 }}>Op Art Controls</span>
+        <span style={{ fontWeight: 'bold', fontSize: 13 }}>Controls</span>
         <div>
           <button
             onClick={() => setParams({ ...DEFAULTS })}
